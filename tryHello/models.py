@@ -20,6 +20,7 @@ class Enrollment(models.Model):
     student=models.ForeignKey(Student, on_delete=models.CASCADE)
     course=models.ForeignKey(Course, on_delete=models.CASCADE)
     created_at=models.DateTimeField(auto_now_add=True)
+    is_active=models.BooleanField(default=True)
 
 
 class TestTable(models.Model):
