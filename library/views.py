@@ -49,3 +49,5 @@ def get_author_by_id(request,author_id):
 
     except Author.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
+
+
