@@ -11,3 +11,4 @@ class Book(models.Model):
     title = models.CharField(max_length=100)
     authors = models.ForeignKey(Author, on_delete=models.CASCADE)
     publish_date = models.DateField(default=timezone.now)
+    test_column=models.CharField(max_length=100)
